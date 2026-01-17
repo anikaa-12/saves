@@ -2,8 +2,6 @@ package com.example.onlinequizapp;
 
 public class QuestionAnswer {
 
-    /* ===================== JAVA ===================== */
-
     static String[] javaQuestions = {
             "Java is a ____ language.",
             "Which keyword is used to create an object?",
@@ -24,8 +22,6 @@ public class QuestionAnswer {
             "Sun Microsystems",
             "main()"
     };
-
-    /* ===================== ISD ===================== */
 
     static String[] isdQuestions = {
             "ISD stands for?",
@@ -48,30 +44,26 @@ public class QuestionAnswer {
             "Flowchart"
     };
 
-    /* ===================== MICROPROCESSOR ===================== */
-
     static String[] microQuestions = {
             "Which microprocessor has 16-bit architecture?",
-            "8086 has how many address lines?",
+            "How many pins does Intel 8086 hvae?",
             "Which register stores instruction?",
             "What is the full form of ALU?"
     };
 
     static String[][] microChoices = {
             {"8085", "8086", "8051", "8031"},
-            {"16", "18", "20", "24"},
+            {"16", "28", "40", "34"},
             {"AX", "BX", "IP", "SP"},
             {"Arithmetic Logic Unit", "Advanced Logic Unit", "Array Logic Unit", "Automatic Logic Unit"}
     };
 
     static String[] microCorrect = {
             "8086",
-            "20",
+            "40",
             "IP",
             "Arithmetic Logic Unit"
     };
-
-    /* ===================== METHODS USED IN MAIN ACTIVITY ===================== */
 
     public static String[] getQuestions(String subject) {
         switch (subject) {
