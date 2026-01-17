@@ -1,0 +1,114 @@
+package com.example.onlinequizapp;
+
+public class QuestionAnswer {
+
+    /* ===================== JAVA ===================== */
+
+    static String[] javaQuestions = {
+            "Java is a ____ language.",
+            "Which keyword is used to create an object?",
+            "Which company developed Java?",
+            "Which method is the entry point of Java program?"
+    };
+
+    static String[][] javaChoices = {
+            {"High-level", "Low-level", "Machine", "Assembly"},
+            {"class", "new", "void", "this"},
+            {"Google", "Microsoft", "Sun Microsystems", "Apple"},
+            {"start()", "main()", "run()", "init()"}
+    };
+
+    static String[] javaCorrect = {
+            "High-level",
+            "new",
+            "Sun Microsystems",
+            "main()"
+    };
+
+    /* ===================== ISD ===================== */
+
+    static String[] isdQuestions = {
+            "ISD stands for?",
+            "Which SDLC model is linear?",
+            "Feasibility study is done in which phase?",
+            "Which diagram shows system flow?"
+    };
+
+    static String[][] isdChoices = {
+            {"Information System Design", "Information System Development", "Internal System Design", "Integrated System Data"},
+            {"Agile", "Waterfall", "Spiral", "RAD"},
+            {"Design", "Testing", "Planning", "Implementation"},
+            {"Flowchart", "ER Diagram", "Use Case", "Class Diagram"}
+    };
+
+    static String[] isdCorrect = {
+            "Information System Development",
+            "Waterfall",
+            "Planning",
+            "Flowchart"
+    };
+
+    /* ===================== MICROPROCESSOR ===================== */
+
+    static String[] microQuestions = {
+            "Which microprocessor has 16-bit architecture?",
+            "8086 has how many address lines?",
+            "Which register stores instruction?",
+            "What is the full form of ALU?"
+    };
+
+    static String[][] microChoices = {
+            {"8085", "8086", "8051", "8031"},
+            {"16", "18", "20", "24"},
+            {"AX", "BX", "IP", "SP"},
+            {"Arithmetic Logic Unit", "Advanced Logic Unit", "Array Logic Unit", "Automatic Logic Unit"}
+    };
+
+    static String[] microCorrect = {
+            "8086",
+            "20",
+            "IP",
+            "Arithmetic Logic Unit"
+    };
+
+    /* ===================== METHODS USED IN MAIN ACTIVITY ===================== */
+
+    public static String[] getQuestions(String subject) {
+        switch (subject) {
+            case "Java":
+                return javaQuestions;
+            case "ISD":
+                return isdQuestions;
+            case "Microprocessor":
+                return microQuestions;
+            default:
+                return new String[]{};
+        }
+    }
+
+    public static String[][] getChoices(String subject) {
+        switch (subject) {
+            case "Java":
+                return javaChoices;
+            case "ISD":
+                return isdChoices;
+            case "Microprocessor":
+                return microChoices;
+            default:
+                return new String[][]{};
+        }
+    }
+
+    public static String[] getCorrectAnswers(String subject) {
+        switch (subject) {
+            case "Java":
+                return javaCorrect;
+            case "ISD":
+                return isdCorrect;
+            case "Microprocessor":
+                return microCorrect;
+            default:
+                return new String[]{};
+        }
+    }
+}
